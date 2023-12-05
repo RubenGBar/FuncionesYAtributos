@@ -10,30 +10,32 @@ public class Main01 {
 	public static void main(String[] args) {
 		
 		int menu;
-		double num1, num2;
+		double num1, num2, resultado = 0;
 		
 		
 		menu = menu();
 		
 		
+		while (resultado != 0) {
+		num1 = pideNumero();
+		num2 = pideNumero();
+
+		Operaciones op = new Operaciones(num1, num2);
 		
-		while (menu != 0) {
-
-			if (menu == 0) {
-
-				System.out.println("El programa ha finalizado");
-
-			} else {
-				num1 = pideNumero();
-				num2 = pideNumero();
-
-				switch (menu) {
-				case 1 -> System.out.println("Place Holder");
-				}
-			}
+		resultado = switch (menu) {
+		case 1 -> op.suma();
+		case 2 -> op.resta();
+		case 3 -> op.multiplicacion();
+		case 4 -> op.dividir();
+		case 5 -> op.maximo();
+		case 6 -> op.minimo();
+		default -> Math.sqrt(-1);
+		};
 		}
+		
+		sc.close();
 	}
-
+		
 	public static int menu() {
 		int opc = 0;
 		
@@ -46,8 +48,6 @@ public class Main01 {
 				+ "\n6.Mínimo"
 				+ "\n0.Salir");
 		opc = sc.nextInt();
-		
-		sc.close();
 		
 		return opc;
 	}
@@ -68,6 +68,8 @@ public class Main01 {
 				System.out.println("El valor introducido es erróneo");
 				num = Math.sqrt(-1);
 				
+			}finally {
+				sc.nextLine();
 			}
 			
 		}while(num == Math.sqrt(-1));
