@@ -36,6 +36,10 @@ public class Main01 {
 		//Bucle while para repetir el programa hasta que se introduzca 0 u otro número fuera del menú
 		while (menu <= 6 && menu > 0) {
 
+			//Título del programa
+			System.out.println("CALCULADORA");
+			System.out.println("");
+			
 			/* Llamo a la función menú para elegir que operación hacer */
 			menu = menu();
 			
