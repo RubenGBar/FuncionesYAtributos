@@ -3,6 +3,23 @@ package ejercicio01;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+ * Valor introducido | Resultado esperado | Resultado obtenido
+ * 2, 9 y 7			 | 2 				  | 2
+ * 1, 8 y 5			 | 13				  | 13
+ * 3, 4 y 5			 | 20				  | 20
+ * 4, 10 y 2,5		 | 4				  | 4
+ * 4, 7 y 0			 | Mensaje que indica | Mensaje que indica
+ * 					 | que no se puede 	  | que no se puede
+ * 					 | dividir entre 0 	  | dividir entre 0
+ * 5, 2 y 2			 | 2 				  | 2
+ * 6, 9 y 1			 | 1				  | 1
+ * 0, 7 y 7			 | Mensaje con el que | Mensaje con el que
+ * 					 | se indica que se ha| se indica que se ha
+ * 					 | pulsado 0		  | pulsado 0
+ * 9, 4 y 4			 | Mensaje de error	  | Mensaje de error
+ * */
+
 public class Main01 {
 	
 	//Scanner estático para poder usarlo en cualquier indistintamente
@@ -49,12 +66,17 @@ public class Main01 {
 				System.out.println("\nEl resultado de la resta es: " + resultado + "\n");
 			}else if (menu == 3) {
 				System.out.println("\nEl resultado de la multiplicación es: " + resultado + "\n");
+			}else if (menu == 4 && num2 == 0) {
+				System.out.println("No se puede dividir entre 0");
 			}else if (menu == 4) {
 				System.out.println("\nEl resultado de la división es: " + resultado + "\n");
 			}else if (menu == 5) {
 				System.out.println("\nEl número más grande es: " + resultado + "\n");
 			}else if (menu == 6) {
 				System.out.println("\nEl número más pequeño es: " + resultado + "\n");
+			}else if (menu == 0){
+				System.out.println("\nSe ha seleccionado 0");
+				System.out.println("El programa ha terminado\n");
 			}else {
 				System.out.println("\nError");
 				System.out.println("No se ha encontrado ninguna opción del menú seleccionado");
