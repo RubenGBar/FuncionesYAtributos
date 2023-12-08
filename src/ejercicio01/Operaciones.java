@@ -2,8 +2,9 @@ package ejercicio01;
 
 //Clase con todas las funciones
 public class Operaciones {
-	//Constructro sin parámetros
+	//Atributos de la clase para hacer las operaciones
 	double num1, num2;
+	//Constructror sin parámetros
 	public Operaciones() {
 			
 	}
