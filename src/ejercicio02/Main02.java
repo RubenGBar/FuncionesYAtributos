@@ -11,10 +11,9 @@ import java.util.Scanner;
  * 					 | finalización del   | finalización del
  * 					 | programa 		  | programa
  * 7, 2,4 y 8		 | Mensaje de error	  | Mensaje de error
- *  |  | 
- *  |  | 
- *  |  | 
- *  |  | 
+ * 4y j				 | Mensaje de error y | Mensaje de error y
+ * 					 | se vuelve a pedir  | se vuelve a pedir
+ * 					 | un número		  | un número 
  * */
 
 public class Main02 {
