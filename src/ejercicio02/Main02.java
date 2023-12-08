@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 					 | finalización del   | finalización del
  * 					 | programa 		  | programa
  * 7, 2,4 y 8		 | Mensaje de error	  | Mensaje de error
- * 4y j				 | Mensaje de error y | Mensaje de error y
+ * 4 y j			 | Mensaje de error y | Mensaje de error y
  * 					 | se vuelve a pedir  | se vuelve a pedir
  * 					 | un número		  | un número 
  * */
@@ -24,7 +24,7 @@ public class Main02 {
 	public static void main(String[] args) {
 		//Variable para recoger la opción del menú
 		int opc = 0;
-		//Variables para guardar el ancho y el alto del rectangulo
+		//Variables para guardar el ancho y el alto del rectangulo y el resultado de las operaciones
 		double ancho = 0, alto = 0, resultado = 0;
 		//Variable para controlar las repeticiones del bucle 
 		boolean repetir = true;
