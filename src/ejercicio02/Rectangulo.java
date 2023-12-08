@@ -1,4 +1,4 @@
-package Ejercicio02;
+package ejercicio02;
 
 public class Rectangulo {
 	
@@ -21,4 +21,8 @@ public class Rectangulo {
 		return 2 * (ancho + alto);
 	}
 	
+	//Función para calcular el área del rectángulo
+	public double area() {
+		return ancho*alto;
+	}
 }

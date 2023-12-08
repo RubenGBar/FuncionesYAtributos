@@ -121,6 +121,9 @@ public class Main01 {
 		
 		//Bucle do while que se repite cuando se introduce un valor erróneo
 		do {
+			//Vuelvo a inicializar la variable en false para que no se quede encerrado en un bucle infinito
+			repetir = false;
+			
 			//Pido que introduzca un número
 			System.out.println("Introduzca un número real (para los decimales usa comas): ");
 			
